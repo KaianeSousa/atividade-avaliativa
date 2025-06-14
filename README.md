@@ -1,6 +1,6 @@
-# atividade-avaliativa
 
-# 💅 Unha Pop!
+
+# Unha Pop!
 
 Site institucional desenvolvido para o **Unha Pop! - Estúdio**, com foco na apresentação dos serviços, agendamento online e acessibilidade. O projeto utiliza **HTML**, **CSS com Bootstrap 5** e **JavaScript**, prezando por uma experiência leve, responsiva e acolhedora ao público-alvo.
 
