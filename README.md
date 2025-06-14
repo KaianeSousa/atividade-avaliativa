@@ -2,7 +2,7 @@
 
 # 💅 Unha Pop!
 
-Site institucional desenvolvido para o **L’Unha - Estúdio**, com foco na apresentação dos serviços, agendamento online e acessibilidade. O projeto utiliza **HTML**, **CSS com Bootstrap 5** e **JavaScript puro**, prezando por uma experiência leve, responsiva e acolhedora ao público-alvo.
+Site institucional desenvolvido para o **Unha Pop! - Estúdio**, com foco na apresentação dos serviços, agendamento online e acessibilidade. O projeto utiliza **HTML**, **CSS com Bootstrap 5** e **JavaScript**, prezando por uma experiência leve, responsiva e acolhedora ao público-alvo.
 
 ---
 
@@ -23,10 +23,10 @@ O site foi pensado para um **estúdio de unhas** moderno e feminino, com navega�
 ### Cores
 - Utilizamos tons claros e escuros com contraste suficiente para atender critérios de **acessibilidade visual**.
 - O site tem **modo claro** por padrão, com opção para modo escuro via botão toggle.
-- O fundo da seção de serviços usa um tom **pastel suave**, transmitindo leveza e sofisticação.
+- O fundo da seção de serviços usa um tom **pastel suave**, transmitindo leveza.
 
 ### Fontes
-- A tipografia foca em **clareza e elegância**, usando famílias sans-serif combinadas com peso variado para títulos e conteúdo.
+- A tipografia foca em **clareza e elegância**, usando a fonte Lexend.
 
 ### Responsividade
 - Com base no **Bootstrap 5**, o layout adapta-se bem a diferentes tamanhos de tela.
@@ -37,7 +37,7 @@ O site foi pensado para um **estúdio de unhas** moderno e feminino, com navega�
 
 ## ⚙️ Funcionalidades em JavaScript
 
-O site tem diversas funcionalidades implementadas com JavaScript puro:
+O site tem diversas funcionalidades implementadas com JavaScript:
 
 ### ✅ Detecção de horário e saudação automática
 ```js
@@ -55,3 +55,22 @@ function mostrarMensagemHorario() {
 
   // Exibe a mensagem antes do título no banner
 }
+```
+
+### ✅ Acessibilidade
+```js
+document.querySelectorAll('img:not([alt])').forEach(img => {
+  img.alt = '';
+  img.setAttribute('aria-hidden', 'true');
+});
+```
+
+### ✅ Troca de tema
+```js
+btnTema.addEventListener('click', function() {
+  document.body.classList.toggle('tema-escuro');
+  localStorage.setItem('tema', document.body.classList.contains('tema-escuro') ? 'escuro' : 'claro');
+});
+
+```
+
